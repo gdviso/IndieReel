@@ -1,0 +1,638 @@
+body{
+	background: 	black;
+	font-family:  'Quicksand', sans-serif;
+	margin:0;
+}
+
+* { box-sizing: border-box; }
+
+h3{
+	font-size: 26px;
+	color: white;
+}
+
+/*custom font*/
+@font-face {
+  font-family: FormulaCondensed-Bold;
+  src: url(../fonts/FormulaCondensed-Bold.otf);
+}
+
+/*Setup Ends*/
+
+/*navbar*/
+.nav {
+    margin: 0px 100px 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+a.logo {
+    display: block;
+    width: 75px;
+}
+a.logo img{
+	max-width: 100px;
+}
+.leftnav {
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+ul.menuleft li {
+    display: inline;
+    padding: 0 30px;
+}
+ul.menuleft li a {
+    text-decoration: none;
+    color: white;
+}
+a{
+	font-weight: 600;
+}
+ul.menuright li a i {
+    color: white;
+}
+ul.menuright li  {
+    display: inline;
+      padding: 0 10px;
+}
+/*nav bar ends*/
+
+/*hero*/
+.heroInfo {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+}
+.heroInfo h2{
+	font-family: 'FormulaCondensed-Bold',sans-serif;
+	color: white;
+	font-size: 100px;
+	margin: 0;
+	text-shadow: 3px 3px 6px #000000fc;
+	letter-spacing: 1.5px;
+}
+ul.categ {
+    padding: 0;
+    margin: 0;
+    padding-left: 3px;
+}
+ul.categ li {
+    display: inline;
+    color: white;
+    padding-right: 20px;
+    font-size: 21px;
+}
+p.herop {
+    color: white;
+    font-size: 16px;
+    max-width: 495px;
+}
+button.herobtn {
+    padding: 8px 74px;
+    background: #845EC2;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 4px 4px 4px #00000075;
+    cursor: pointer;
+}
+.hero .carousel .carousel-cell.hero2 {
+    background-position: center;
+    background-image: linear-gradient(to top,#000,#0000007d,#00000000,#00000000),linear-gradient(to bottom,#000,#00000045,#00000000,#00000000), url(../images/hero2.jpg);
+}
+.hero .carousel .carousel-cell.hero1 {
+	background-position: center;
+    background-image: linear-gradient(to top,#000,#0000007d,#00000000,#00000000),linear-gradient(to bottom,#000,#00000045,#00000000,#00000000), url(../images/hero1.jpg);
+}
+.hero .carousel .carousel-cell.hero3 {
+	background-position: center;
+    background-image: linear-gradient(to top,#000,#0000007d,#00000000,#00000000),linear-gradient(to bottom,#000,#00000045,#00000000,#00000000), url(../images/hero3.jpg);
+}
+.hero .carousel .carousel-cell.hero4 {
+    background-image: linear-gradient(to top,#000,#0000007d,#00000000,#00000000),linear-gradient(to bottom,#000,#00000045,#00000000,#00000000), url(../images/hero4.jpg);
+}
+.hero .carousel .carousel-cell {
+	height: 75vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+
+}
+
+/* cell number */
+.hero .carousel .carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+/* position dots in gallery */
+.flickity-page-dots {
+  bottom: 	35px!important;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+/* big buttons, no circle */
+.flickity-button{
+	background: none!important;
+}
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+/*hero ends*/
+/*sliders*/
+.slider {
+  max-width: 90%;
+  margin:0 auto;
+  margin-bottom: 45px;
+}
+.carousel-cell {
+    width: 115px;
+    height: 125px;
+    margin-right: 50px;
+    background: black;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 150px;
+  font-size: 80px;
+  color: black;
+}
+
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+/*Movie slider*/
+
+.movies .carousel-cell {
+    width: 258px;
+    height: 158px;
+    background: grey;
+    margin-right: 6px;
+    border-radius: 3px;
+    counter-increment: carousel-cell;
+}
+
+/*Directors pictures*/
+.carousel-cell.dir1{
+	background-image: url(../images/dir1.png);
+}
+.carousel-cell.dir2{
+	background-image: url(../images/dir2.png);
+}
+.carousel-cell.dir3{
+	background-image: url(../images/dir3.png);
+}
+.carousel-cell.dir4{
+	background-image: url(../images/dir4.png);
+}
+.carousel-cell.dir5{
+	background-image: url(../images/dir5.png);
+}
+.carousel-cell.dir6{
+	background-image: url(../images/dir6.png);
+}
+.carousel-cell.dir7{
+	background-image: url(../images/dir7.png);
+}
+.carousel-cell.dir8{
+	background-image: url(../images/dir8.png);
+}
+.carousel-cell.dir9{
+	background-image: url(../images/dir9.png);
+}
+.carousel-cell.dir10{
+	background-image: url(../images/dir10.png);
+}
+.carousel-cell.dir11{
+	background-image: url(../images/dir11.png);
+}
+
+
+/*DIrectors pictures ends*/
+
+/*Movie Posters*/
+
+.carousel-cell.mov1{
+	background-image: url(../images/mov1.png);
+}
+.carousel-cell.mov2{
+	background-image: url(../images/mov2.png);
+}
+.carousel-cell.mov3{
+	background-image: url(../images/mov3.png);
+}
+.carousel-cell.mov4{
+	background-image: url(../images/mov4.png);
+}
+.carousel-cell.mov5{
+	background-image: url(../images/mov5.png);
+}
+.carousel-cell.mov6{
+	background-image: url(../images/mov6.png);
+}
+.carousel-cell.mov7{
+	background-image: url(../images/mov7.png);
+}
+.carousel-cell.mov8{
+	background-image: url(../images/mov8.png);
+}
+.carousel-cell.mov9{
+	background-image: url(../images/mov9.png);
+}
+.carousel-cell.mov10{
+	background-image: url(../images/mov10.png);
+}
+.carousel-cell.mov11{
+	background-image: url(../images/mov11.png);
+}
+.carousel-cell.mov12{
+	background-image: url(../images/mov12.png);
+}
+.carousel-cell.mov13{
+	background-image: url(../images/mov13.png);
+}
+.carousel-cell.mov14{
+	background-image: url(../images/mov14.png);
+}
+.carousel-cell.mov15{
+	background-image: url(../images/mov15.png);
+}
+.carousel-cell.mov16{
+	background-image: url(../images/mov16.png);
+}
+.carousel-cell.mov17{
+	background-image: url(../images/mov17.png);
+}
+.carousel-cell.mov18{
+	background-image: url(../images/mov18.png);
+}
+.carousel-cell.mov19{
+	background-image: url(../images/mov19.png);
+}
+.carousel-cell.mov21{
+	background-image: url(../images/mov21.png);
+}
+.carousel-cell.mov22{
+	background-image: url(../images/mov22.png);
+}
+.carousel-cell.mov23{
+	background-image: url(../images/mov23.png);
+}
+.carousel-cell.mov24{
+	background-image: url(../images/mov24.png);
+}
+.carousel-cell.mov25{
+	background-image: url(../images/mov25.png);
+}
+.carousel-cell.mov26{
+	background-image: url(../images/mov26.png);
+}
+.carousel-cell.mov27{
+	background-image: url(../images/mov27.png);
+}
+.carousel-cell.mov28{
+	background-image: url(../images/mov28.png);
+}
+.carousel-cell.mov29{
+	background-image: url(../images/mov29.png);
+}
+.carousel-cell.mov30{
+	background-image: url(../images/mov30.png);
+}
+/*countries*/
+.carousel-cell.cou1{
+	background-image: url(../images/cou1.png);
+}
+.carousel-cell.cou2{
+	background-image: url(../images/cou2.png);
+}
+.carousel-cell.cou3{
+	background-image: url(../images/cou3.png);
+}
+.carousel-cell.cou4{
+	background-image: url(../images/cou4.png);
+}
+.carousel-cell.cou5{
+	background-image: url(../images/cou5.png);
+}
+.carousel-cell.cou6{
+	background-image: url(../images/cou6.png);
+}
+.carousel-cell.cou7{
+	background-image: url(../images/cou7.png);
+}
+.carousel-cell.cou8{
+	background-image: url(../images/cou8.png);
+}
+/*Movie Posters End*/
+.carousel-cell.top1{
+	background-image: url(../images/top1.png);
+}
+.carousel-cell.top2{
+	background-image: url(../images/top2.png);
+}
+.carousel-cell.top3{
+	background-image: url(../images/top3.png);
+}
+.carousel-cell.top4{
+	background-image: url(../images/top4.png);
+}
+.carousel-cell.top5{
+	background-image: url(../images/top5.png);
+}
+.carousel-cell.top6{
+	background-image: url(../images/top6.png);
+}
+.carousel-cell.top7{
+	background-image: url(../images/top7.png);
+}
+.carousel-cell.top8{
+	background-image: url(../images/top8.png);
+}
+.carousel-cell.top9{
+	background-image: url(../images/top9.png);
+}
+.carousel-cell.top10{
+	background-image: url(../images/top10.png);
+}
+.top .carousel-cell {
+    height: 227px;
+    width: 232px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+/*MOVIE PROFILE PAGE STARTS HERE*/
+.gradient{
+position: relative;
+}
+video { 
+
+    width: 100%;
+    height: 77vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+}
+header.moviepro .nav {
+    padding-top: 13px;
+}
+
+button#mute-video i {
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px black;
+}
+button#mute-video {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    z-index: 999;
+    background: none;
+    border: none;
+}
+button#mute-video:focus {
+    outline: none;
+}
+.cast-poster {
+    display: flex;
+    margin: 45px 7%;
+    justify-content: space-between;
+}
+.castwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.castmember {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p.membername {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+p.role {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.bts .carousel-cell{
+  width: 607px;
+  height: 356px;
+}
+.mobutton a {
+    text-decoration: none;
+}
+.carousel-cell.bts1{
+  background-image: url(../images/bts1.png);
+}
+.carousel-cell.bts2{
+  background-image: url(../images/bts2.png);
+}
+.carousel-cell.bts3{
+  background-image: url(../images/bts3.png);
+}
+.carousel-cell.bts4{
+  background-image: url(../images/bts4.png);
+}
+.carousel-cell.bts5{
+  background-image: url(../images/bts5.png);
+}
+
+.carousel-cell.more1{
+  background-image: url(../images/more1.png);
+}
+.carousel-cell.more2{
+  background-image: url(../images/more2.png);
+}
+.carousel-cell.more3{
+  background-image: url(../images/more3.png);
+}
+.carousel-cell.more4{
+  background-image: url(../images/more4.png);
+}
+.carousel-cell.more5{
+  background-image: url(../images/more5.png);
+}
+/*MOVIE PROFILE PAGE ENDS HERE*/
+
+.mobile-menu{
+  display: none;
+}
+
+@media screen and (max-width: 1122px) {
+
+  ul.menuleft li {
+      display: inline;
+      padding: 0px 5px;
+  }
+  ul.menuleft {
+      padding-left: 0;
+  }
+  .nav {
+      margin: 0px 20px 0px 20px;
+
+  }
+  .leftnav {
+      width: 67%;
+  }
+}
+@media screen and (max-width: 1070px) {
+.cast-poster {
+    flex-direction: column;
+}
+}
+@media screen and (max-width: 670px) {
+.movposter {
+
+    max-width: 320px;
+
+}
+.castmember {
+    width: 50%;
+}
+.rightnav{
+  display: none;
+}
+
+  .leftnav {
+      width: 100%;
+  }
+.hidemob{
+  display: none!important;
+}
+
+.mobile-menu {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: -8px;
+    bottom: 0;
+    text-align: center;
+    z-index: 999;
+    background: black;
+    width: 100%;
+    align-items: center;
+    padding: 15px 10px;
+}
+.mobile-menu i {
+    font-size: 30px;
+}
+
+.mobile-menu i, .mobile-menu p {
+  color: white;
+}
+.mobile-menu p {
+    margin-top: 4px;
+    font-size: 10px;
+    margin-bottom: 0;
+}
+ul.menuleft li {
+    display: inline;
+    padding: 0px 3px;
+    font-size: 13px;
+}
+
+.heroInfo h2{
+  font-size: 50px;
+}
+.heroInfo {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-block-43{
+  display: flex;
+  flex-direction: column;
+}
+.image-16 {
+    padding-bottom: 20px;
+}
+.div-block-46{
+  margin-right: 0;
+}
+.section-6 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.heading-8{
+  display: none;
+}
+.graphcontainer{
+  display: none;
+}
+button.herobtn{
+  max-width: 300px;
+}
+p.herop {
+    max-width: 300px;
+}
+ul.categ li {
+    font-size: 13px;
+}
+video{
+  width: 100%;
+}
+}
