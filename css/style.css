@@ -472,7 +472,6 @@ p.role {
     margin-top: 0;
     margin-bottom: 20px;
 }
-
 .bts .carousel-cell{
   width: 607px;
   height: 356px;
@@ -516,7 +515,9 @@ p.role {
 .mobile-menu{
   display: none;
 }
-
+.list.w-list-unstyled li, .list-2.w-list-unstyled li, .list-3.w-list-unstyled li, .list-4.w-list-unstyled li {
+    list-style: none;
+}
 @media screen and (max-width: 1122px) {
 
   ul.menuleft li {
